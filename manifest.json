@@ -1,0 +1,29 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "挨拶アドオン",
+        "description": "挨拶でプレイヤーを歓迎しよう！",
+        "uuid": "599293c1-9311-469b-8298-40e728670fcb",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 21, 100]
+    },
+    "metadata": {
+        "authors": ["Nano191225"],
+        "url": "https://github.com/Nano191225/Greeting-Addon"
+    },
+    "modules": [
+        {
+            "type": "script",
+            "uuid": "bd362800-60e1-433f-8ade-91a3f3acdf9a",
+            "version": [1, 0, 0],
+            "language": "javascript",
+            "entry": "scripts/index.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.1.0"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@minecraft/server": "^2.1.0"
+  },
+  "name": "greeting-addon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nano191225",
+  "license": "GPL-3.0",
+  "description": ""
+}
