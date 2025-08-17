@@ -1,15 +1,20 @@
 {
-  "dependencies": {
-    "@minecraft/server": "^2.1.0"
-  },
-  "name": "greeting-addon",
-  "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Nano191225",
-  "license": "GPL-3.0",
-  "description": ""
+    "name": "greeting-addon",
+    "version": "1.0.0",
+    "type": "module",
+    "author": "Nano191225",
+    "license": "GPL-3.0",
+    "description": "挨拶をするアドオン",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Nano191225/Greeting-Addon.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Nano191225/Greeting-Addon/issues"
+    },
+    "homepage": "https://github.com/Nano191225/Greeting-Addon#readme",
+    "devDependencies": {
+        "@minecraft/server": "^2.1.0"
+    },
+    "dependencies": {}
 }
