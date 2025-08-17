@@ -133,4 +133,25 @@ system.beforeEvents.startup.subscribe(({ customCommandRegistry }) => {
         world.setDynamicProperty("greeting-addon:websocket", parameter);
         return { status: CustomCommandStatus.Success, message: `挨拶アドオンをWebSocketに対応させる設定が ${parameter} に変更されました！` };
     });
+
+    // help cmd
+    customCommandRegistry.registerCommand({
+        name: "greet:help",
+        description: "挨拶アドオンのヘルプを表示します",
+        permissionLevel: CommandPermissionLevel.GameDirectors,
+        cheatsRequired: false,
+    }, () => {
+        return {
+            status: CustomCommandStatus.Success,
+            message: "挨拶アドオンのコマンド一覧:\n" +
+                "/greet:on - 挨拶アドオンを有効にします\n" +
+                "/greet:off - 挨拶アドオンを無効にします\n" +
+                "/greet:setchance <0-1> - 挨拶メッセージの表示確率を設定します\n" +
+                "/greet:format <format> - 挨拶メッセージのフォーマットを設定します ( {name} と {message} を含む必要があります )\n" +
+                "/greet:websocket <true/false> - 挨拶アドオンをWebSocketに対応させます\n\n" +
+                "GitHubリポジトリ: §3https://github.com/Nano191225/Greeting-Addon§r\n" +
+                "Discordサーバーに参加して最新情報をゲットしよう！\n" +
+                "§3https://discord.gg/QF3n85dr4P§r\n"
+        };
+    });
 });
